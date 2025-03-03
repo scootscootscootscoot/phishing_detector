@@ -1,0 +1,23 @@
+Test Case 1: Phishing Email
+Sender: user@fakebank.com
+Content: Urgent! Verify your account at http://fake-login.com now.
+Expected Output:
+- Suspicious sender domain detected: fakebank.com
+- Suspicious URL detected: http://fake-login.com
+- Phishing keyword detected: 'urgent'
+
+Test Case 2: Safe Email
+Sender: friend@gmail.com
+Content: Hey, how’s it going? See you at https://example.com.
+Expected Output:
+- Sender seems okay.
+- No suspicious URLs found.
+- Content seems okay.
+
+Test Case 3: Subtle Phishing
+Sender: support@secure-login.com
+Content: Please login now to update your profile.
+Expected Output:
+- Sender seems okay.
+- No suspicious URLs found.
+- Phishing keyword detected: 'login now'
